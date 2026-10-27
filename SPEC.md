@@ -2,8 +2,8 @@
 
 ## STUDIO-001 · Launch a tested calculator on an existing server
 
-**Status:** Repeat runtime/public HTTPS/API verification passed. Learner reported matching results, chose to keep the deployment and approved the corrected summary. Full E2E/CI and GitHub completion remain pending.
-**Next step:** Review the scoped diff and authorize commit/push/PR.
+**Status:** Runtime/public HTTPS/API verification and full PR/post-merge CI passed. Learner reported matching results, chose to keep the deployment and approved the summary. PR #2 is merged and issue #1 is closed.
+**Next step:** Submit https://github.com/BombayV/373_hosting to the instructor after the final documentation commit's checks pass.
 **Instructor implementation:** [issue #9](https://github.com/kaw393939/373_hosting/issues/9).
 Create your own issue from the [lesson template](.github/ISSUE_TEMPLATE/studio-calculator.md).
 
@@ -34,12 +34,12 @@ reviewed, selected evidence; never commit credentials or raw server output.
 
 | Evidence | Actual result / link |
 |---|---|
-| Prepared Black/Pylint/pytest and real-image browser checks | Fast checks passed after checker change: Black, Pylint, 91 tests. Two E2E tests deselected; full CI remains pending because local Docker is not running. |
+| Prepared Black/Pylint/pytest and real-image browser checks | Local Black, Pylint and 91 tests passed; two local E2E tests were deselected because local Docker was not running. Full prepared checks, including real-image browser E2E, passed in [PR CI](https://github.com/BombayV/373_hosting/actions/runs/40554078514) and [post-merge main CI](https://github.com/BombayV/373_hosting/actions/runs/40554393462). |
 | Hosted image/commit, trusted HTTPS, valid and rejected API cases | Repeat verification passed; [sanitized evidence](studio/evidence.json). Report correctly says `already-managed`, not a successful initial new-launch report. |
 | Preservation of unrelated services | Existing route file hashes and unrelated container IDs/start times unchanged during repair; repeat verifier confirms three unrelated containers' selected identity/state/ports unchanged. |
 | Own prediction, check interpretation, browser observation and keep/revise reason | [LEARNING.md](LEARNING.md), drafted from this chat with AI assistance and learner corrections disclosed. Learner clarified prior knowledge of Traefik and unclear question wording; no knowledge gap is inferred. Own-site numeric results were not stated. |
-| Accuracy review before publishing learner excerpts | Learner approved the corrected summary in chat; edited explanation is labeled as supplied through the local file. |
-| Actual PR, latest CI, merge and issue closure | Pending |
+| Accuracy review before publishing learner excerpts | Learner approved the corrected summary in chat. LEARNING.md is retained as merged at the learner's request. |
+| Actual PR, latest CI, merge and issue closure | [PR #2](https://github.com/BombayV/373_hosting/pull/2) merged; [issue #1](https://github.com/BombayV/373_hosting/issues/1) closed. [PR CI](https://github.com/BombayV/373_hosting/actions/runs/40554078514) and [post-merge main CI](https://github.com/BombayV/373_hosting/actions/runs/40554393462) passed. Subsequent documentation-only commit checks are available in [Actions](https://github.com/BombayV/373_hosting/actions). |
 
 Link the exported `studio/evidence.json`, actual CI and issue/PR when available.
 The checker now identifies HTTP requests as `IS373-Studio/1.0`: Cloudflare
