@@ -389,7 +389,11 @@ def _http_json(origin, path, payload=None, *, timeout=8):
     request = urllib.request.Request(
         url,
         data=None if payload is None else json.dumps(payload).encode(),
-        headers={"Content-Type": "application/json", "Accept": "application/json"},
+        headers={
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "IS373-Studio/1.0",
+        },
     )
     try:
         response = urllib.request.urlopen(request, timeout=timeout)
